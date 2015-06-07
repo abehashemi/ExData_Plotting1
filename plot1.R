@@ -2,7 +2,7 @@
 x <- read.table("household_power_consumption.txt", na.strings="?", sep=";")
 
 # Subset data
-y <- x[x$V1 == "2/1/2007" | x$V1 == "2/2/2007", ]
+y <- x[x$V1 == "1/2/2007" | x$V1 == "2/2/2007", ]
 u <- as.vector(y[ ,3])
 u <- as.numeric(u)
 
